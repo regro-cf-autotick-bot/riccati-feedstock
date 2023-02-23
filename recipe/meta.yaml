@@ -1,5 +1,5 @@
 {% set name = "riccati" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/riccati-{{ version }}.tar.gz
-  sha256: 1c3131dc742a78ba84b71976d291a7eeecfbaaf2bd17e9f1191139e51139c71e
+  sha256: 71152d51d12a15f1983545ffc929df378311aa21ccaca03dd401fa8d95d5cf70
 
 build:
   noarch: python
@@ -22,6 +22,7 @@ requirements:
     - setuptools-scm
     - pytest-runner
     - pip
+    - versioneer
   run:
     - python >=3.6
     - numpy
@@ -34,7 +35,7 @@ test:
     - mpmath
   commands:
     - pip check
-    - python -m pytest tests
+    - python -m pytest riccati/tests
   requires:
     - pip
     - numpy
@@ -42,8 +43,8 @@ test:
     - mpmath
     - pytest
   source_files:
-    - tests
-    - tests/test_riccati.py
+    - riccati/tests
+    - riccati/tests/test_riccati.py
 
 about:
   home: https://github.com/fruzsinaagocs/riccati
