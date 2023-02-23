@@ -35,7 +35,7 @@ test:
     - mpmath
   commands:
     - pip check
-    - python -m pytest tests
+    - python -m pytest riccati/tests
   requires:
     - pip
     - numpy
@@ -43,8 +43,8 @@ test:
     - mpmath
     - pytest
   source_files:
-    - tests
-    - tests/test_riccati.py
+    - riccati/tests
+    - riccati/tests/test_riccati.py
 
 about:
   home: https://github.com/fruzsinaagocs/riccati
