@@ -1,11 +1,11 @@
-About riccati
-=============
+About riccati-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/riccati-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/fruzsinaagocs/riccati
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/riccati-feedstock/blob/main/LICENSE.txt)
 
 Summary: adaptive Riccati defect correction solver
 
