@@ -1,5 +1,5 @@
 {% set name = "riccati" %}
-{% set version = "1.0.13" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/riccati-{{ version }}.tar.gz
-  sha256: b409f17bc6cf5989b560d77a0baf433ac973cd16a5a111f07360b6627d5a89c0 
+  sha256: 9c8fb6be786694038e929dd871b9f65cd4fff682731d5f1dbb4c9590d433605a
 
 build:
   noarch: python
